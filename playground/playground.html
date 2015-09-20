@@ -1,0 +1,44 @@
+<head>
+  <title>2D Matching Algorithm</title>
+</head>
+
+
+<body>
+ 	<div class="container">
+  		<header>
+  			<h1>2D Matching Algorithm</h1>
+  		</header>
+  			{{> addX}}
+  			{{> addY}}
+  			{{> display}}
+ 	</div>
+ </body>
+
+
+<template name="display">
+	<h4>X Outs</h4>
+	{{#each xouts}}
+		{{letters}}
+		<br>
+	{{/each}}
+	<h4>Y Outs</h4>
+	{{#each youts}}
+		{{letters}}
+		<br>
+	{{/each}}
+
+</template>
+
+<template name="addX">
+	<h3>Add X Values</h3>
+	<form class="new-x">
+		<input type="text" name="xin"/>
+	</form>
+</template>
+
+<template name="addY">
+	<h3>Add Y Values</h3>
+	<form class="new-y">
+		<input type="text" name="yin"/>
+	</form>
+</template>
